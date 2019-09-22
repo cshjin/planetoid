@@ -33,7 +33,7 @@ def comp_accu(tpy, ty):
 NAMES = ['x', 'y', 'tx', 'ty', 'graph']
 objects = {}
 for name in NAMES:
-    data = pkl.load(open("data/ind.{}.{}".format(DATASET, name), 'rb'), encoding='latin1')
+    data = pkl.load(open("data/trans.{}.{}".format(DATASET, name), 'rb'), encoding='latin1')
     objects[name] = data
 #     objects.append(cPickle.load(open("data/trans.{}.{}".format(DATASET, name))))
 # x, y, tx, ty, graph = tuple(objects)
